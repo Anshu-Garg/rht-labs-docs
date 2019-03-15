@@ -427,7 +427,7 @@ ansible-playbook apply.yml -e target=tools \
 
 6. In the `Containers` section for the pod template, add a new container template with the following details:
     * Enter `jnlp` in the `Name` field
-    * Enter `docker-registry.default.svc:5000/rsriniva-ci-cd/jenkins-slave-arachni` in the `Docker image` field
+    * Enter `docker-registry.default.svc:5000/<YOUR_NAME>-ci-cd/jenkins-slave-arachni` in the `Docker image` field
     * Enter `/tmp` in the `Working directory` field
     * Enter `${computer.jnlpmac} ${computer.name}` in the `Arguments to pass to the command` field
 
