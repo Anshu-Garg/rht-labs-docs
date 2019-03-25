@@ -196,7 +196,7 @@ where the following are the important things:
 9. To prepare Nexus to host the binaries created by the frontend and backend builds we need to run a prepare-nexus script. Before we do this we need to export some variables and change `<YOUR_NAME>` accordingly in the below commands.
 
 <p class="tip" >
-NOTE: Microsoft Windows users, run the following commands in the *do500-toolbox* container. Linux and MacOS users should skip this tep and continue from the *oc login* step.
+NOTE: Microsoft Windows users, run the following commands in the *do500-toolbox* container. Linux and MacOS users should skip this step and continue from the *oc login* step.
 </p>
 
 ```bash
