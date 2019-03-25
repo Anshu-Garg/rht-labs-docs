@@ -519,7 +519,7 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
       // TODO - FILL THIS OUT IN THE EXERCISE
       this.$store.dispatch("updateTodo", {id: this.todoItem._id, important: true});
       console.info("INFO - Mark todo as important ", this.todoItem.important);
-    },
+    }
 ```
 
 14. Let's connect the click button in the DOM to the Javascript function we've just created. In the template, add a click handler to the md-button to call the function `markImportant()` by adding ` @click="markImportant()"` to the `<md-button>` tag
@@ -531,7 +531,7 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
     </md-button>
 ```
 
-15. Finally - we need to make it so that when a new todo item is created it will have an important property. Head to `store/actions.js` and add `important: false`  below `completed: false` in the `addTodo(){}` action.
+15. Finally - we need to make it so that when a new todo item is created it will have an important property. Head to `src/store/actions.js` and add `important: false`  below `completed: false` in the `addTodo(){}` action.
 
 ![fe-add-actions-important](../images/exercise3/fe-add-actions-important.jpg)
 
