@@ -107,8 +107,9 @@ git checkout develop
 
 2. Open up Gitlab and login. Create a new project (internal) in GitLab called `todolist-fe` to host your clone of the project and copy its remote address. ![new-gitlab-proj](../images/exercise2/new-gitlab-proj.png)
 
-3. In your local clone of the `todolist-fe`, remove the origin and add the GitLab origin by replacing `<YOUR_GIT_LAB_PROJECT>`. Push your app to GitLab
+3. In your local clone of the `todolist-fe`, remove the origin and add the GitLab origin by replacing `<YOUR_GIT_LAB_PROJECT>`. Push your app to GitLab. (As before, we will bypass SSL key verification in this repo since we are using self-signed certificates on the GitLab sever.)
 ```bash
+git config http.sslVerify false
 git remote set-url origin <YOUR_GIT_LAB_PROJECT>
 # verify the origin has been updated
 git remote -v
@@ -244,8 +245,9 @@ git checkout develop
 
 2. On GitLab; create a new project (internal) called `todolist-api` to host your clone of the project and copy its remote address as you did for the previous repositories.
 
-3. In your local clone of the `todolist-api`, remove the origin and add the GitLab origin by replacing `<YOUR_GIT_LAB_PROJECT>`. Push your app to GitLab
+3. In your local clone of the `todolist-api`, remove the origin and add the GitLab origin by replacing `<YOUR_GIT_LAB_PROJECT>`. Push your app to GitLab. (As before, we will bypass SSL key verification in this repo since we are using self-signed certificates on the GitLab sever.) 
 ```bash
+git config http.sslVerify false
 git remote set-url origin <YOUR_GIT_LAB_PROJECT>
 ```
 ```bash
